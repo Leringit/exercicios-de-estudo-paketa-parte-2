@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercício 9</title>
+</head>
+<body>
+    <h1>Exercício 9</h1>
+
+    <p>Crie uma função que informa se tem os caracteres 'dota' no parâmetro informado</p>
+
+   
+    
+    <script>
+        let frase = window.prompt("Digite a frase ou palavra que deseja analisar:");
+
+        function verificaDota(arg) {
+            a = arg.toLowerCase();
+            let teste = a.indexOf("dota");
+
+            if (teste != -1) {
+                return "A frase digitada possui a palavra 'dota'";
+            } else {
+                return "A frase digitada não possui a palavra 'dota'";
+            }
+        }
+    
+        window.document.write("Frase digitada:  " + frase);
+        window.document.write("<br><br>Resultado da verificação:  " + verificaDota(frase));
+
+    </script>
+</body>
+</html>

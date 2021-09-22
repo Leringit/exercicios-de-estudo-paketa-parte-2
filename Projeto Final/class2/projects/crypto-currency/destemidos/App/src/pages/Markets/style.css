@@ -1,0 +1,29 @@
+.feeds, .destemidos, .influencers, .markets {
+  margin-left: 10em;
+}
+
+.box{
+  color: #fff;
+  background: #11121b;
+  width: 92.3vw;
+  height: 100vh;
+  align-self: center;
+  align-items: center;
+  text-align: center;
+  margin-left: 5.5em;
+}
+
+.box-table{
+  width: 100%;
+  text-align: right;
+}
+
+.btn-market-refrsh{
+  cursor: pointer;
+  width: 150px;
+  height: 25px;
+  color: #fff;
+  background: #11121b;
+  border-radius: 0.3em;
+  margin-right: 8px;
+}

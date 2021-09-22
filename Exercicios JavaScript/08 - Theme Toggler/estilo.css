@@ -1,0 +1,53 @@
+@charset "UTF-8";
+  
+* {
+	box-sizing: border-box;
+}
+
+body {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	height: 100vh;
+	margin: 0;
+    background: url('./img/pensando.jpg') repeat;
+}
+
+body.img {
+	background: url('./img/acerto.jpg') repeat;
+}
+
+.checkbox {
+	opacity: 10%;
+	position: absolute;
+}
+
+.label {
+	background-color: rgb(97, 93, 39);
+	border-radius: 50px;
+	cursor: pointer;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	padding: 5px;
+	position: relative;
+	height: 26px;
+	width: 50px;
+	transform: scale(1.5);
+}
+
+.label .ball {
+	background-color: rgb(168, 168, 168);
+	border-radius: 50%;
+	position: center;
+	top: 10px;
+	left: 10px;
+	height: 15px;
+	width: 15px;
+	transform: translateX(0px);
+	transition: transform 0.2s linear;
+}
+
+.checkbox:checked + .label .ball {
+	transform: translateX(24px);
+}

@@ -1,0 +1,71 @@
+@charset "utf-8";
+@font-face {
+    font-family: 'OldLondon';
+    src: url("/font/OldLondon.ttf");
+}
+
+
+.header{
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    letter-spacing: 0.1em;
+    margin-top: 3%;
+ 
+}
+
+hr{
+    width: 90%;
+    size: 2%;
+}
+
+.header__top{
+    display: flex;
+    justify-content: space-around;
+    font-size: 0.6em;
+    padding-left: 5%; 
+           
+}
+
+.header__top--title{
+    display: flex;
+    justify-content: space-around;
+}
+
+.link{
+    text-decoration: none;
+    color: rgb(0, 0, 0);
+}
+
+.link:hover {
+    text-decoration: none;
+}
+
+h1{
+
+    font-size: 3.3em;
+    font-family: OldLondon;
+}
+
+.header__top--bottom{
+    display: flex;
+    padding: 1% 5%;
+    justify-content: space-around;
+    font-size: 0.8em;
+}
+
+.body__top--tabela{
+    padding: 0 5%;
+}
+
+.body__top{
+    display: flex;
+    justify-content: flex-start;
+}
+
+.body__top img{
+    width: 50px;
+    height: 60px;
+    padding-top: 1rem;
+}

@@ -1,0 +1,75 @@
+.cellphone {
+  border-radius: 15px;
+  border: 3px solid #eee;
+  overflow: hidden;
+  position: relative;
+  height: 600px;
+  width: 340px;
+  box-sizing: border-box;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: rgba(155, 89, 182, 0.7);
+  min-height: 100vh;
+}
+
+.container {
+  background-color: #fff;
+  display: flex;
+  padding: 0;
+  margin: 0;
+  list-style-type: none;
+  height: 60px;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  margin-top: -5px;
+  width: 100%;
+}
+
+#home {
+  color: #777;
+  cursor: pointer;
+  flex: 1;
+  padding: 10px;
+  text-align: center;
+}
+
+#work {
+  color: #777;
+  cursor: pointer;
+  flex: 1;
+  padding: 10px;
+  text-align: center;
+}
+
+#blog {
+  color: #777;
+  cursor: pointer;
+  flex: 1;
+  padding: 10px;
+  text-align: center;
+}
+
+#aboutUs {
+  color: #777;
+  cursor: pointer;
+  flex: 1;
+  padding: 10px;
+  text-align: center;
+}
+
+.bottom {
+  font-size: 12px;
+  margin: 2px 0;
+}
+
+.bottom:hover {
+  color: #8e44ad;
+}

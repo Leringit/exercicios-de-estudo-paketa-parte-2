@@ -1,0 +1,111 @@
+@import url('https://fonts.googleapis.com/css?family=Muli:300,500&display=swap');
+
+* {
+	box-sizing: border-box;
+}
+
+body {
+	font-family: 'Muli', sans-serif;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	height: 100vh;
+	margin: 0;
+}
+
+body::after {
+	background-image: url('https://www.google.com/url?sa=i&url=https%3A%2F%2Fbr.pinterest.com%2Fpin%2F275352964696925819%2F&psig=AOvVaw12CShGNWA17ZcpZrt9CBda&ust=1626896570061000&source=images&cd=vfe&ved=0CAsQjRxqFwoTCMDhurmz8vECFQAAAAAdAAAAABAG');
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center center;
+	content: '';
+	filter: blur(5px);
+	position: absolute;
+	height: 100vh;
+	width: 100vw;
+	z-index: -1;
+}
+
+.container {
+	background-color: #222;
+	box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+	display: flex;
+	height: 70vh;
+	width: 70vw;
+	max-width: 800px;
+}
+
+.esquerda {
+	color: #fff;
+	display: flex;
+	flex-direction: column;
+	padding: 40px;
+	position: relative;
+	width: calc(50% - 10px);
+}
+
+.esquerda h2 {
+	margin: 0;
+}
+
+.esquerda h3 {
+	border-bottom: 1px solid #333;
+	font-weight: 400;
+	font-size: 16px;
+	margin: 30px 0 0;
+}
+
+.esquerda p {
+	color: #8e44ad;
+	font-weight: 500;
+	font-size: 13px;
+	margin: 3px 0;
+}
+
+.esquerda button {
+	background-color: transparent;
+	border: 1px solid #8e44ad;
+	color: #fff;
+	cursor: pointer;
+	font-weight: 500;
+	padding: 15px 30px;
+	margin-top: auto;
+}
+
+.esquerda::after {
+  border-top: 0 solid transparent;
+	border-bottom: 70vh solid transparent;
+	border-left: 30px solid #222;
+	content: '';
+	position: absolute;
+	top: 0;
+	left: 100%;
+	height: 0;
+	width: 0;
+}
+
+.direita {
+	background-image: url('https://www.google.com/url?sa=i&url=https%3A%2F%2Fbr.pinterest.com%2Fpin%2F275352964696925819%2F&psig=AOvVaw12CShGNWA17ZcpZrt9CBda&ust=1626896570061000&source=images&cd=vfe&ved=0CAsQjRxqFwoTCMDhurmz8vECFQAAAAAdAAAAABAG');
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center center;
+	width: calc(50% + 20px);
+}
+
+@media screen and (max-width: 700px) {
+	.esquerda {
+		width: 100%;
+	}
+	
+	.esquerda::after {
+		display: none;
+	}
+	
+	.esquerda h3 {
+		margin-top: 20px;
+	}
+	
+	.direita {
+		display: none;
+	}
+}

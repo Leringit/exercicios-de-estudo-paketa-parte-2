@@ -1,0 +1,18 @@
+.SliderView{
+  width: 900px;
+  text-align: right;
+  margin: 0 auto;
+  margin-top: 70px;
+}
+
+.SliderImage{
+  max-width: 900px;
+  text-align: right;
+  margin: 0 auto;
+}
+
+/* .SliderTitle{
+  max-width: 900px;
+  text-align: left;
+  margin: 0 auto;
+} */

@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>JavaScript</title>
+    </head>
+    <body>
+        <h1>Exercício 2</h1>
+        <p>Receba um array de 10 números inteiros aleatórios de 1 a 100 e retorne qual é o maior número <br>
+            Exemplo: [1, 11, 3, 29, 44, 66, 7, 21, 20, 30] <br> O maior número é o 66.</p>
+
+        <p>Números gerados aleatóriamente</p>
+        <script>
+            function getNumbers(min, max) {
+                return Math.floor(Math.random() * (max - min + 1)) + min;
+            }
+
+            let array = [];
+            for (let i = 0 ; i < 10 ; i++){
+            array.push(getNumbers(1,100));
+            
+            }   
+            console.log(array)            
+            array.sort()
+
+            let maior = Math.max.apply(null, array)
+            
+            window.document.write(array) 
+            window.document.write("<br><br>O maior numero é: " +maior )
+        
+        </script>
+
+
+        
+
+    </body>
+</html>

@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercício 19</title>
+</head>
+<body>
+    <h1>Exercício 19</h1>
+
+    <p>Faça um algoritmo que leia o tempo de duração de um evento em uma fábrica expressa em segundos e mostre-o expresso em horas, minutos e segundos.</p>
+
+    <script>
+        const tempduracao = (tempo) => {
+            let hora = tempo / 3600
+            let minutos = (tempo%3600)/60
+            let segundos = (tempo%3600)%60
+            console.log(`O evento possui ${hora.toFixed(0)}h${minutos.toFixed(0)}m${segundos.toFixed(0)}`)
+        }
+        tempduracao(3600)
+    </script>
+</body>
+</html>

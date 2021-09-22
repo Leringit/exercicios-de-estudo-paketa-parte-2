@@ -1,0 +1,39 @@
+@charset "utf-8";
+
+*{
+    margin: 0;
+    padding: 0;
+    border: none;
+}
+
+.c-body{
+    background: #353b48;    
+    align-items: center;
+    margin: 0 auto;
+    color: #ffffff;
+}
+
+.c-titulo{
+    padding: 20px;
+    text-align: center;
+}
+
+.c-box__container{
+    display: flex;
+    width: 600px;
+    background: #4a4f5b;    
+    border-radius: 5px;
+    box-shadow: 3px 3px 10px rgba(7, 7, 7, 0.35);    
+    padding: 10px;
+    margin: 20px auto;
+    align-items: center;    
+}
+
+.c-box__desc{    
+    margin: 10px;
+    line-height: 2;
+}
+
+.espace{
+    line-height: 1;
+}

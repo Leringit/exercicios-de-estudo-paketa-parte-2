@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercício 12</title>
+</head>
+<body>
+    <h1>Exercício 12</h1>
+
+    <p>Tendo como dados de entrada a altura e o sexo de uma pessoa (M - masculino e F- feminino), construa um algoritmo que calcule seu peso ideal, utilizando as seguintes fórmulas:
+       <br> - para homens: (72.7*h)-58
+       <br> - para mulheres: (62.1*h)-44.7</p>
+       <br>
+
+    <script>
+        let altura = Number(window.prompt("Insira a Altura: "))
+        let sexo = String(window.prompt("Insira M para masculino ou F para feminino: "))
+        
+        window.document.write("<br><br>A altura informada foi: " + altura)
+        window.document.write("<br><br>O sexo informado foi: " + sexo);
+        
+        if (sexo === 'M') {
+            let pesoideal = (altura * 72.7) - 58
+            window.document.write("<br><br>O Peso ideal é: " + pesoideal);
+        } else if (sexo === 'F'){
+            let pesoideal = (altura * 62.1) - 44.7
+            window.document.write("<br><br>O Peso ideal é: " + pesoideal);
+        }else{
+            window.document.write("<br><br>Sexo inválido ou capslook está ativado");
+        }
+    </script>
+</body>
+</html>

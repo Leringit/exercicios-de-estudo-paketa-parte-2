@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercício 13</title>
+</head>
+<body>
+    <h1>Exercício 13</h1>
+
+    <p>Escrever um algoritmo que lê um valor em reais e calcula qual o menor número possível de notas
+         de 100, 50, 10, 5 e 1 em que o valor lido pode ser decomposto. Escrever o valor lido e a relação de notas necessárias.</p>
+
+<script>
+    let qtdnts = (val) => {
+        let nts100 = 0, nts50 = 0, nts20 = 0, nts10 = 0, nts5 = 0, nts2 = 0
+        let nts = val
+        while(val != 0){
+            if(val >= 100){
+                val -= 100           
+                nt100++
+            }else if(val >= 50){
+                val -= 50            
+                nt50++
+            }else if(val >= 20){
+                val -= 20            
+                nts20++
+            }else if(val >= 10){
+                val -= 10
+                nts10++
+            }else if(val >= 5){
+                val -= 5
+                nts5++
+            }else if(val >= 2){
+                val -= 2
+                nts2++
+            }
+        }
+        window.document.write(`O menor número de notas para o valor ${nts} é: <br> 
+        ${nts100} notas de cem <br>
+        ${nts50} notas de cinquenta <br> 
+        ${nts20} notas de vinte <br>
+        ${nts10} notas de dez <br>
+        ${nts5} notas de cinco <br>
+        ${nts2} notas de dois`)
+    }
+    qtdnts(0)
+    </script>
+</body>
+</html>
